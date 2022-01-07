@@ -10,7 +10,7 @@ public class ClientProxy implements IProxy {
         try {
             SoundSystemConfig.setCodec(ext, cls);
             for (String type : mimeTypes)
-                NotEnoughCodecs.KNOWN_MIME_TYPES.put(type, ext);
+                JustEnoughCodecs.KNOWN_MIME_TYPES.put(type, ext);
         } catch (Throwable t) {
             Log.warn(t, "Can't register codec %s for extension %s", cls.getName(), ext);
         }
@@ -31,10 +31,5 @@ public class ClientProxy implements IProxy {
         registerCodec(CodecMP3.class, "MP3", "audio/mpeg", "audio/x-mpeg", "audio/mpeg3", "audio/x-mpeg3");
         registerCodec(CodecFLAC.class, "FLAC", "audio/flac");
 
-        registerCodec("paulscode.sound.codecs.CodecIBXM", "XM", "audio/xm", "audio/x-xm"); // unconfirmed, but whatever
-        registerCodec("paulscode.sound.codecs.CodecIBXM", "S3M", "audio/s3m", "audio/x-s3m");
-        registerCodec("paulscode.sound.codecs.CodecIBXM", "MOD", "audio/mod", "audio/x-mod");
-
-        registerCodec("paulscode.sound.codecs.CodecWav", "WAV", "audio/wav", "audio/x-wav", "audio/wave");
     }
 }

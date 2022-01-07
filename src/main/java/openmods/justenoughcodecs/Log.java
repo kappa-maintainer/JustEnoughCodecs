@@ -10,7 +10,7 @@ public final class Log {
     private static final Logger logger;
 
     static {
-        logger = LogManager.getLogger("NotEnoughCodecs");
+        logger = LogManager.getLogger("JustEnoughCodecs");
     }
 
     private static final Throwable stackInfo = new Throwable();

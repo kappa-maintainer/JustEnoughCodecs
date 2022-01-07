@@ -1,0 +1,15 @@
+[
+{
+  "modid": "justenoughcodecs",
+  "name": "JustEnoughCodecs",
+  "description": "Streaming codecs for two formats",
+  "version": "${version}",
+  "url": "https://github.com/kappa-maintainer/JustEnoughCodecs",
+  "updateUrl": "",
+  "authorList": [],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

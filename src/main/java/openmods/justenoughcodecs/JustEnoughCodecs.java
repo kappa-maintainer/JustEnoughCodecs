@@ -14,8 +14,8 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-@Mod(modid = ModSettings.Default.ID, name = ModSettings.Default.NAME, version = "@VERSION@", acceptedMinecraftVersions = ModSettings.Default.MC_VERSIONS, acceptableRemoteVersions = "*")
-public class NotEnoughCodecs {
+@Mod(modid = "justenoughcodecs", name = "JustEnoughCodecs", version = "@VERSION@", acceptedMinecraftVersions = "1.12.2", acceptableRemoteVersions = "*")
+public class JustEnoughCodecs {
 
     public static final Map<String, String> KNOWN_MIME_TYPES = Maps.newHashMap();
 
